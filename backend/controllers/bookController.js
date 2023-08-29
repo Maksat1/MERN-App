@@ -76,7 +76,8 @@ const deleteBook = async (req, res) => {
 // update a book
 const updateBook = async (req, res) => {
   const { id } = req.params
-
+  const { isbn, title, author, image } = req.body
+  
   if (!mongoose.Types.ObjectId.isValid(id)) {
     return res.status(404).json({ error: 'No such book' })
   }

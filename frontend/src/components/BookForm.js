@@ -54,7 +54,7 @@ const BookForm = () => {
       <h3>Добавить книгу</h3>
 
       <label>Название:</label>
-      <input 
+      <input
         type="text"
         onChange={(e) => setTitle(e.target.value)}
         value={title}
